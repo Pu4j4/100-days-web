@@ -1,0 +1,17 @@
+body {
+    background-color: powderblue;
+}
+div {
+    border-style: dashed;
+    text-align: center;
+}
+h1   { 
+    background-color: antiquewhite;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p    {
+    background-color: azure;
+    color: red;
+    font-style: italic;
+}

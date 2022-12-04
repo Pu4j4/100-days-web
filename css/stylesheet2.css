@@ -1,0 +1,19 @@
+body {
+    background-color:floralwhite;
+}
+h1   { 
+    background-color: black;
+    color: blue;
+    font-family:'Times New Roman', Times, serif
+}
+h2 {
+    background-color: ivory;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p  
+  {
+    background-color:beige;
+    color: red;
+    font-style:oblique;
+}
