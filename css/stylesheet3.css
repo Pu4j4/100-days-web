@@ -1,0 +1,24 @@
+body{
+    background-color: lightblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    color:deeppink;
+}
+.bhanu{
+    font-weight: 400;
+    color: forestgreen;
+}
+h1, h2{
+    font-weight: 400;
+}
+
+ul li{
+    list-style-type: disc;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
