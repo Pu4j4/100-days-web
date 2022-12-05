@@ -1,24 +1,18 @@
 body{
-    background-color: lightblue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 p{
     text-align: justify;
 }
-h1{
-    text-align: center;
+h1 ,h2{
+    text-align: left;
     color:deeppink;
 }
 .bhanu{
     font-weight: 400;
-    color: forestgreen;
+    color:black;
 }
-h1, h2{
-    font-weight: 400;
-}
-
 ul li{
     list-style-type: disc;
-    margin-bottom: 10px;
-    margin-left: 50px;
 }
