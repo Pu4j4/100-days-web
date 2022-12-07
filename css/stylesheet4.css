@@ -1,0 +1,29 @@
+body {
+    background-color:lightblue;
+    padding: 25px
+  }
+  
+  .student {
+    width: 800px;
+    height: 440x;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 120px;
+    padding-top: 20px;
+    border-radius: 12px;
+    background-color:hotpink;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  .student h2 {
+    text-align:justify;
+  }
+  
+  table {
+    margin: 0 auto;
+  }
+  
+  td,th {
+    padding: 12px;
+    border: 2px dotted;
+  }
