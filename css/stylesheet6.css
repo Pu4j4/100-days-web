@@ -1,0 +1,21 @@
+div{
+    border-style: dashed;
+    text-align: center;
+    background-color: bisque;
+}
+h3 {
+    text-align: left;
+    background-color: aliceblue;
+    color: black;
+}
+P{
+    background-color: rgb(213, 226, 226);
+}
+.left
+{
+ font-weight: 300;   
+color: blue;
+}
+.right{
+color: blue;
+}
