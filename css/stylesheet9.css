@@ -1,0 +1,38 @@
+nav {
+    background: rgb(247, 217, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 2px 2px 2px #f1f1f1;
+  }
+  .link {
+    font-weight:var(bold);
+  }
+      .nav-item {
+        margin-left: 2rem;
+      }
+      body {
+        font-family: "Roboto", sans-serf;
+      }
+      
+      ul li {
+        list-style-type: square;
+      }
+      ul {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .about
+      {
+            background-color: aliceblue;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+      }
+      
