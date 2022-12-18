@@ -49,6 +49,12 @@
     color: white;
     cursor: pointer;
 }
+.text-big {
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
 
 .btn-sm {
     padding: 6px 10px;
@@ -75,18 +81,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.secondhalf {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.thirdhalf {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .text-small {
     font-size: 18px;
 }
