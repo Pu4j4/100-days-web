@@ -1,0 +1,10 @@
+Primitive Date types - it refers to the type of data in javascript.
+Non-primitive datatype - Object is a non-primitive datatype in javascript.
+
+these are the 7primitive datatypes in javascript
+->Null ->Number ->string ->symbol ->undefined ->boolean ->bigint
+
+An Object in javascript can be created as follows
+const item = {
+    key : "value"
+} 
