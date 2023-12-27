@@ -1,0 +1,18 @@
+variable is a container that stores a value.
+The value of a javascript variable can be changed during the execution of a program.
+ var a = 7; //declaring variables
+ let a = 7;
+ const a = 7;
+ var,let,const are variables which is assigned value 7 to variable name a.
+
+ rules for choosing variable names:
+ ->letters,digits,underscores & $sign allowed
+ ->must begin with a,$,_or a letter
+ ->javascript reserved word cannot be used as a variable name
+ 
+var is globally scoped while let and const are block scoped
+var can be updated & re-declared within its scope
+let can be updated but not re-declared
+const can neither be updated nor be re-declared
+var variables are initialized with undefined whereas let and const variables are not initialized
+const must be initialized during declaration unlike let and var
