@@ -1,0 +1,5 @@
+JavaScript was initially created to “make web pages alive”.
+JavaScript is the programming language of the Web.
+JavaScript is easy to learn.
+The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
+JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine(like node.js).
