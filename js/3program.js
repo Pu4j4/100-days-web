@@ -1,14 +1,14 @@
-//alert
+/*alert
 alert("Hello");
 
-//prompt
+prompt
 result = prompt(title, [default]);
 let age = prompt('How old are you?', 100);
 
-alert(`You are ${age} years old!`); 
+console.log(`You are ${age} years old!`); 
 
-//confirm
+confirm
 result = confirm(question);
 let isBoss = confirm("Are you the boss?");
 
-alert( isBoss )
+alert( isBoss )*/

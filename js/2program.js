@@ -1,10 +1,10 @@
 let a = null;
 let b = 888;
 let c = true; //can also be false
-let d = bigint("149")
+let d = BigInt("149")
 let e = "ashish"
-let f = symbol("nice symbol")
-let g = underfined
+let f = Symbol("nice symbol")
+let g = undefined
 console.log(a, b, c, d, e, f, g)
 //variable of type string and add number to it
 let bhanu = 20;
@@ -17,18 +17,18 @@ console.log(typeof bhanu)
 //const a; it is not possible
 
 //add key to const object
-const an {
+const animal = {
     animal : "lion"
 }
 
 
 //create word meaning dictionary 
 
-const dict{
+const dict ={
     Grateful : "feeling or showing an appreciation of kindness",
     Genetic : "relating to genes or heredity",
     Gigantic : "of very great size",
     Gaze : "look steadily and intently"
 }
-console.log(Grateful)
+console.log(dict)
 
