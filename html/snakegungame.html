@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake, Water, Gun Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Snake, Water, Gun Game</h1>
+
+  <script>
+    function playGame() {
+      const userChoice = prompt("Enter S for Snake, W for Water, or G for Gun").toUpperCase();
+      const computerChoice = ['S', 'W', 'G'][Math.floor(Math.random() * 3)];
+      
+      alert(`Your choice: ${userChoice}\nComputer's choice: ${computerChoice}\nResult: ${getWinner(userChoice, computerChoice)}`);
+
+      if (confirm("Do you want to play again?")) {
+        playGame();
+      } else {
+        alert("Thanks for playing! Goodbye!");
+      }
+    }
+
+    function getWinner(user, computer) {
+      if (user === computer) {
+        return "It's a tie!";
+      } else if (
+        (user === 'S' && computer === 'W') ||
+        (user === 'W' && computer === 'G') ||
+        (user === 'G' && computer === 'S')
+      ) {
+        return "You win!";
+      } else {
+        return "You lose!";
+      }
+    }
+
+    playGame();  // Start the game
+  </script>
+
+</body>
+</html>
