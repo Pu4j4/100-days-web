@@ -1,4 +1,3 @@
-
 window.addEventListener("DOMContentLoaded", (event) => {
    
     var form = document.getElementById("form")
@@ -39,8 +38,22 @@ const APIURL = 'https://api.github.com/users/'
 
 function adduser(user){
 console.log(user)
-
-var userHtml = `<div>${user.name}
-${user} </div>`
+const userID = user.name || user.login
+const userBio = user.bio ? `<p>${user.bio}</p>` : '' 
+var userHtml = `<div class="userHtml">
+<div>
+<img src="${user.avatar_url}" alt="${user.name}" class="avatar">
+</div> 
+<div class="user-info">
+<h2>${userID}</h2>${userBio}
+<ul>
+<li>${user.followers} <strong>Followers</strong></li>
+<li>${user.following} <strong>Following</strong></li>
+<li>${user.public_repos} <b>Repos</b></li>
+<li>${user.blog} <b>Blog</b></li>
+</ul>
+<div id="repos"></div>
+</div>
+</div>`
 main.innerHTML = userHtml 
 }

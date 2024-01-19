@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML forms</title>
+    </head>
+    <body>
+        <form class="form" id="form">
+            <label for="fullname">Full name : </label>
+            <input type="text" id="fullname" name="fullname" maxlength="10"><br><br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phonenumber">PH no</label>
+            <input type="number" id="phonenumber" name="phonenumber"><br><br>
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="5" cols="50"></textarea><br><br>
+            <label for="note">Write a note</label>
+            <textarea id="note" name="note" rows="5" cols="50"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            var form=document.getElementById("form")
+            var fullname = document.getElementById("fullname")
+            var email=document.getElementById("email")
+            var phonenumber=document.getElementById("phonenumber")
+            var address=document.getElementById("address")
+            var note=document.getElementById("note")
+            form.addEventListener('submit', (e) => {
+                e.preventDefault()
+
+                console.log(fullname.value)    
+            
+            console.log(phonenumber.value)
+            console.log(address.value)
+            console.log(note.value)
+            })
+            function validate() {
+                var errorMsg = "";
+                email.value=errorMsg;
+                if (email === "") {
+                    errorMsg += "Email cannot be empty.<br>";
+                  }
+                  if (email === (!validEmail(email))){
+                   
+                    }
+                  else {
+                      errorMsg += "Provide a valid email address<br>";
+                  }
+                  return errorMsg;
+                }
+        </script>
+    </body>
+</html>
