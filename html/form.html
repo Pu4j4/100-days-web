@@ -4,8 +4,8 @@
         <title>HTML forms</title>
     </head>
     <body>
-        <form class="form" id="form">
-            <label for="fullname">Full name : </label>
+        <form class="form" id="form" name="form" onsubmit="return validateForm()" method="post">
+            <label for="fullname">Full name </label>
             <input type="text" id="fullname" name="fullname" maxlength="10"><br><br>
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email"><br><br>
@@ -27,26 +27,19 @@
             form.addEventListener('submit', (e) => {
                 e.preventDefault()
 
-                console.log(fullname.value)    
-            
-            console.log(phonenumber.value)
-            console.log(address.value)
-            console.log(note.value)
+                    console.log(fullname.value)
+                    console.log(email.value)
+                    console.log(phonenumber.value)
+                    console.log(address.value)
+                    console.log(note.value)
             })
-            function validate() {
-                var errorMsg = "";
-                email.value=errorMsg;
-                if (email === "") {
-                    errorMsg += "Email cannot be empty.<br>";
-                  }
-                  if (email === (!validEmail(email))){
-                   
-                    }
-                  else {
-                      errorMsg += "Provide a valid email address<br>";
-                  }
-                  return errorMsg;
-                }
+            function validateForm() {
+                 var x = document.forms["form"]["email"].value;
+                if (x == "" || x == null) {
+                    alert("email must be filled out");
+                    return false;
+                }  
+            }
         </script>
     </body>
 </html>
